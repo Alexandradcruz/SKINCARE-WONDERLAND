@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Wonderland</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: black;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #4e89ae; /* Warna biru tua */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            background-color: #f2f2f2; /* Abu-abu muda */
+            color: #4e89ae; /* Warna biru tua */
+            font-weight: bold;
+            padding: 10px 20px; /* Tambahkan ruang di sekitar teks */
+            border-radius: 5px; /* Bentuk sudut tombol */
+            transition: background-color 0.3s; /* Animasi perubahan warna saat disorot */
+        }
+
+        nav ul li a:hover {
+            background-color: #4e89ae; /* Warna biru tua */
+            color: #fff; /* Putih */
+        }
+
+        .hero {
+            color: #333; /* Warna abu-abu tua */
+            text-align: center;
+            padding: 100px 0;
+            background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih transparan */
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            margin-top: 0;
+            color: #4e89ae; /* Warna biru tua */
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap; /* Produk akan baris baru jika lebarnya tidak cukup */
+            justify-content: center; /* Produk akan ditengahkan */
+        }
+
+        .product-info {
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px; /* Tambahkan ruang di antara produk */
+            background-color: #fff; /* Warna putih */
+        }
+
+        .product-info img {
+            width: 100%; /* Gambar akan mengisi lebar parent */
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #4e89ae; /* Warna biru tua */
+            color: #fff; /* Putih */
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333; /* Warna abu-abu tua */
+        }
+    </style>
+</head>
+<body>
+    <header>
+			<div class="navbar-extra">
+      <a href="#" id="search"><i data-feather="search"></i></a>
+      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+      <a href="#" id="gift"><i data-feather="gift"></i></a>
+    </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="Skintific Official">
+            <h2>Skintific Official</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="tentang.html">Tentang Produk Kami</a></li>
+                <li><a href="hubungi.html">Kontak Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+     <section class="hero" style="background-image: url('Skintific Oficial.jpg');">
+        <h1>Selamat Datang di Skincare Wonderland</h1>
+        <p>Temukan produk terbaik dan tips perawatan kulit eksklusif untuk kecantikan Anda!</p>
+    </section>
+
+    <div class="content">
+        <h2>Produk Terbaru</h2>
+        <div class="products">
+            <div class="product-info">
+                <img src="5x Ceramide Barrier.webp" alt="Produk 1 5x Ceramide Barrier">
+                <h3>Produk 1</h3>
+                <p>5x Ceramide Barrier.</p>
+                <p>Harga: Rp. 100.000</p>
+            </div>
+            <div class="product-info">
+                <img src="Glowing set.jpg" alt="Produk 2 Glowing Set">
+                <h3>Produk 2</h3>
+                <p>Glowing Set.</p>
+                <p>Harga: Rp. 150.000</p>
+            </div>
+            <div class="product-info">
+                <img src="Acne Gel Set.jpg" alt="Produk 3 Acne Gel Set">
+                <h3>Produk 3</h3>
+                <p>Acne Gel Set</p>
+                <p>Harga: Rp. 200.000</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Skincare Wonderland. All rights reserved.</p>
+    </footer>
+</body>
+</html>
