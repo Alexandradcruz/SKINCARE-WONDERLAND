@@ -7,7 +7,7 @@
     <style>
         body {
             margin: 0;
-            font-family: black;
+            font-family: Arial, sans-serif;
             background-color: #f2f2f2;
         }
 
@@ -34,7 +34,7 @@
             font-weight: bold;
             padding: 10px 20px; 
             border-radius: 5px; 
-            transition: background-color 0.3s;
+            transition: background-color 0.3s; 
         }
 
         nav ul li a:hover {
@@ -69,7 +69,7 @@
         .products {
             display: flex;
             flex-wrap: wrap; 
-            justify-content: center; 
+            justify-content: center;
         }
 
         .product-info {
@@ -78,13 +78,77 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             margin: 10px; 
-            background-color: #fff;
+            background-color: #fff; 
         }
 
         .product-info img {
             width: 100%; 
             border-radius: 10px;
             margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #f2f2f2; 
+        }
+
+        table th, table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #4e89ae; 
+            color: #fff; 
+        }
+
+        ul, ol {
+            text-align: left;
+            margin-left: 20px;
+            background-color: #f2f2f2; 
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            text-align: left;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f2f2f2; 
+            border-radius: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="checkbox"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            background-color: #4e89ae; 
+            color: #fff; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; 
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #357dab; 
         }
 
         footer {
@@ -119,11 +183,11 @@
 </head>
 <body>
     <header>
-			<div class="navbar-extra">
-      <a href="#" id="search"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-      <a href="#" id="gift"><i data-feather="gift"></i></a>
-    </div>
+        <div class="navbar-extra">
+            <a href="#" id="search"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="gift"><i data-feather="gift"></i></a>
+        </div>
         <div class="logo">
             <img src="logo.jpg" alt="Skintific Official">
             <h2>Skintific Official</h2>
@@ -137,8 +201,8 @@
             </ul>
         </nav>
     </header>
-    
-     <section class="hero" style="background-image: url('Skintific Oficial.jpg');">
+
+    <section class="hero" style="background-image: url('Skintific Oficial.jpg');">
         <h1>Selamat Datang di Skincare Wonderland</h1>
         <p>Temukan produk terbaik dan tips perawatan kulit eksklusif untuk kecantikan Anda!</p>
     </section>
@@ -165,6 +229,63 @@
                 <p>Harga: Rp. 200.000</p>
             </div>
         </div>
+
+        <h2>Tabel Produk</h2>
+<table>
+    <tr>
+        <th>Nama Produk</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+    </tr>
+    <tr>
+        <td>Produk 1</td>
+        <td>Rp. 100.000</td>
+        <td><input type="number" id="jumlahProduk1" name="jumlahProduk1" min="0"></td>
+    </tr>
+    <tr>
+        <td>Produk 2</td>
+        <td>Rp. 150.000</td>
+        <td><input type="number" id="jumlahProduk2" name="jumlahProduk2" min="0"></td>
+    </tr>
+    <tr>
+        <td>Produk 3</td>
+        <td>Rp. 200.000</td>
+        <td><input type="number" id="jumlahProduk3" name="jumlahProduk3" min="0"></td>
+    </tr>
+</table>
+
+        <h2>Daftar Produk</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Produk 1</li>
+            <li>Produk 2</li>
+            <li>Produk 3</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Produk 1</li>
+            <li>Produk 2</li>
+            <li>Produk 3</li>
+        </ol>
+
+        <h2>Form Pemesanan</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="products">Pilih produk:</label><br>
+            <input type="checkbox" id="productA" name="product" value="A">
+            <label for="productA">Produk 1</label><br>
+            <input type="checkbox" id="productB" name="product" value="B">
+            <label for="productB">Produk 2</label><br>
+            <input type="checkbox" id="productC" name="product" value="C">
+            <label for="productC">Produk 3</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
     <footer>
